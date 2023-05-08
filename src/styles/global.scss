@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
+
+@font-face {
+	font-family: "Beaujolais";
+	src: url("./fonts/Beaujolais One W00 Regular.woff") format("woff");
+	src: url("./fonts/Beaujolais One W00 Regular.eot") format("eot");
+	src: url("./fonts/Beaujolais One W00 Regular.otf") format("otf");
+	src: url("./fonts/Beaujolais One W00 Regular.ttf") format("ttf");
+	src: url("./fonts/Beaujolais One W00 Regular.svg") format("svg");
+	src: url("./fonts/Beaujolais One W00 Regular.woff2") format("woff2");
+}
+
+.halfCircle {
+	-webkit-animation: 3s ease-out grow-circle;
+	animation: 3s ease-out grow-circle;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-delay: 1s;
+	animation-delay: 0.5s;
+	background-color: #fce202;
+	width: 60px;
+	height: 30px;
+	transform: scale(0);
+	transform-origin: center bottom;
+	z-index: 0;
+	border-top-left-radius: 120px;
+	border-top-right-radius: 120px;
+	transition: 1s;
+}
+@keyframes grow-circle {
+	0% {
+		transform: scale(0) translateX(-50%);
+		-webkit-transform: scale(0);
+	}
+	100% {
+		transform: scale(1) translateX(-50%);
+		-webkit-transform: scale(1);
+	}
+}
