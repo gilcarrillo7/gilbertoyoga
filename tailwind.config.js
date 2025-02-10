@@ -18,7 +18,7 @@ module.exports = {
 		fontFamily: {
 			sans: ["Roboto", "sans-serif"],
 			belleza: ["Belleza", "sans-serif"],
-			beujolais: ["Beaujolais", "sans-serif"],
+			bellezas: ["Belleza", "sans-serif"],
 		},
 		extend: {
 			colors: {
